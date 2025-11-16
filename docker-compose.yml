@@ -47,6 +47,7 @@ services:
       - WEBUI_NAME=valiantlynx AI
       - WEBUI_URL=http://localhost:8080
       - WEBUI_SECRET_KEY=t0p-s3cr3t
+      - NO_PROXY=host.docker.internal 
     extra_hosts:
       - host.docker.internal:host-gateway
     restart: unless-stopped
